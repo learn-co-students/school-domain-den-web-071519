@@ -25,7 +25,7 @@ class School
 
     def sort
         new_roster = {}
-        roster.sort.to_h.each do |key, value|
+        roster.each do |key, value|
             if !new_roster[key]
                 new_roster[key] = value.sort
             end
